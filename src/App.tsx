@@ -15,15 +15,15 @@ export function App() {
         {messages.length === 0 && (
           <QuestionSuggestions onSelectQuestion={sendMessage} />
         )}
-        <ChatMessages 
+        <ChatMessages
           messages={messages}
           isLoading={isLoading}
           error={error}
         />
         <div className="border-t p-4">
-          <ChatInput 
-            onSendMessage={sendMessage} 
-            disabled={isLoading} 
+          <ChatInput
+            onSendMessage={sendMessage}
+            disabled={isLoading}
             placeholder="اپنا پیغام ٹائپ کریں..."
           />
         </div>
